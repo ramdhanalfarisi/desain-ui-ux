@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Order Produk</title>
+</head>
+<body>
+    <h2>Form Order Produk</h2>
+    <img src="assets/img/kaos.jpg" alt="Gambar Produk" width="200"><br><br>
+
+     <div class="product-info">
+            <h3>Kaos Keren</h3>
+            <p><strong>Harga:</strong> Rp 120.000</p>
+            <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+        </div>
+    </div>
+
+    <form action="output.php" method="POST">
+        <label for="nama">Nama Anda:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="produk">Nama Produk:</label><br>
+        <input type="text" id="produk" name="produk" value="Kaos Keren" readonly><br><br>
+
+        <label for="ukuran">Ukuran:</label><br>
+        <select id="ukuran" name="ukuran" required>
+            <option value="">-- Pilih Ukuran --</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select><br><br>
+
+        <label for="jumlah">Jumlah:</label><br>
+        <input type="number" id="jumlah" name="jumlah" min="1" required><br><br>
+
+        <label for="Metode">Metode Pembayaran:</label><br>
+        <select id="Metode" name="Metode">
+            <option value="">-- Pilih Metode Pembayaran --</option>
+            <option value="1">BCA</option>
+            <option value="2">MANDIRI</option>
+            <option value="3">BRI</option>
+            <option value="4">BNI</option>
+            <option value="5">SEABANK</option>
+        </select><br><br>
+
+        <input type="submit" value="Pesan Sekarang">
+    </form>
+</body>
+</html>
