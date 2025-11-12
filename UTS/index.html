@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramdhan Alfarisi_0110225129_UTSFORM05</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sistem Informasi Seminar Tugas Akhir - SISTA</h1>
+        </header>
+
+        <nav>
+            <a href="#">Home</a>
+            &bull;
+            <a href="#">Jadwal</a>
+            &bull;
+            <a href="#">Detail Jadwal</a>
+            &bull;
+            <a href="#">Daftar Peserta</a>
+        </nav>
+
+        <section class="seminar-details">
+            <p>Mahasiswa Seminar : Diego Armando (0102002)</p>
+            <p>Judul : Rancang Bangun Aplikasi Seminar Tugas Akhir Berbasis Web Menggunakan MVC Framework</p>
+            <p>Waktu : Senin, 4 Januari 2021, 10:00</p>
+        </section>
+
+        <fieldset class="form-container">
+            <legend>Form Peserta Seminar</legend>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nim">NIM :</label>
+                    <input type="text" id="nim" name="nim">
+                </div>
+                
+                <div class="form-group">
+                    <label for="nama">Nama :</label>
+                    <input type="text" id="nama" name="nama">
+                </div>
+
+                <div class="form-group">
+                    <label for="prodi">Prodi :</label>
+                    <select id="prodi" name="prodi">
+                        <option value="si" selected>Sistem Informasi</option>
+                        <option value="ti">Teknik Informatika</option>
+                        <option value="bd">Bisnis Digital</option>
+                    </select>
+                </div>
+
+                <div class="form-group program-radio">
+                    <label>Program :</label>
+                    <input type="radio" id="d3" name="program" value="D3">
+                    <label for="d3">D3</label>
+                    
+                    <input type="radio" id="s1reg" name="program" value="S1 Reguler" checked>
+                    <label for="s1reg">S1 Reguler</label>
+                    
+                    <input type="radio" id="s1fast" name="program" value="S1 Fast Track">
+                    <label for="s1fast">S1 Fast Track</label>
+                    
+                    <input type="radio" id="s2" name="program" value="S2">
+                    <label for="s2">S2</label>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Daftar</button>
+                </div>
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
