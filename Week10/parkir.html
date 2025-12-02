@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Biaya Parkir</title>
+    <script language="JavaScript">
+        function hitungParkir() {
+            let jamMasuk = parseInt(document.getElementById("jamMasuk").value);
+            let jamKeluar = parseInt(document.getElementById("jamKeluar").value);
+
+            let lama = jamKeluar - jamMasuk;
+            let biaya = 0;
+
+            if (lama <= 2) {
+                biaya = 3000;
+            } else {
+                biaya = 3000 + (lama - 2) * 1000;
+            }
+
+            document.getElementById("lama").innerHTML = lama + " Jam";
+            document.getElementById("biaya").innerHTML = "Rp " + biaya;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Program Menghitung Biaya Parkir</h2>
+
+    <form>
+        Jam Masuk :
+        <input type="number" id="jamMasuk"><br><br>
+
+        Jam Keluar :
+        <input type="number" id="jamKeluar"><br><br>
+
+        <input type="button" value="Hitung" onclick="hitungParkir()">
+    </form>
+
+    <hr>
+
+    Lama Parkir : <span id="lama"></span><br>
+    Biaya Parkir : <span id="biaya"></span>
+
+</body>
+</html>
